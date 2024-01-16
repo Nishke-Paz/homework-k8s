@@ -3,7 +3,7 @@
 2) Скачивание образа python:3.10-alpine: `docker pull python:3.10-alpine`
 3) Созадние файла `Dockerfile`
 4) Сборка docker image: `docker build -t my-web-app:1.0.0 .`
-  4.1) Проверка работы: `docker run -p 8000:8000 my-web-app:1.0.0`
+4.1) Проверка работы: `docker run -p 8000:8000 my-web-app:1.0.0`
 5) Размещение образа на Docker Hub: `docker tag my-web-app:1.0.0 chipaza/my-web-app:1.0.0` `docker push chipaza/my-web-app:1.0.0`
 6) Создание kubernetes deployment manifest `deployment.yaml`
 7) Установка в кластер `kubectl apply -f deployment.yaml --namespace test`
